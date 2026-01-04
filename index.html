@@ -1,47 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chhorn Vibol</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f7f7f7;
-            padding: 50px;
-        }
-        h1 {
-            color: #333;
-        }
-        img {
-            width: 200px;
-            height: 300px;
-            border: 2px solid #333;
-            margin: 20px 0;
-        }
-        a.button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-        a.button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chhorn Vibol</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>Scan or Save My Bank QR</h1>
-    
-   
-    <img src="./photo_2026-01-04_09-22-11.jpg" alt="My Bank QR">
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen p-12 font-sans text-center">
 
-    <br>
-   <a href="./photo_2026-01-04_09-22-11.jpg" download="MyBankQR.jpg" class="button">Download QR</a>
+  <!-- Title -->
+  <h1 class="text-4xl font-bold text-gray-800 animate-bounce mb-8">
+    Thank for Save and Scan
+  </h1>
+
+  <!-- QR Image -->
+  <img 
+    src="./photo_2026-01-04_09-22-11.jpg" 
+    alt="My Bank QR"
+    class="w-48 h-72 border-2 border-gray-800 rounded-lg mb-6 object-cover"
+  />
+
+  <!-- Download Button -->
+  <a 
+    href="./photo_2026-01-04_09-22-11.jpg" 
+    download="MyBankQR.jpg" 
+    class="inline-block px-6 py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition"
+  >
+    Download QR
+  </a>
 
 </body>
 </html>
